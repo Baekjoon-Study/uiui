@@ -1,15 +1,15 @@
 #include <stdio.h>
-#define _CRT_SECURE_NO_WARNINGS
 
-int main()
+int main (void)
 {
     char sentence[1000];
-    int i;
+    int num;
 
-    scanf("%s",sentence);
-    scanf("%d",&i);
+    scanf("%s",&sentence);
+    scanf("%d",&num);
 
-    printf("%c",sentence[i-1]);
+    char* p=sentence;
+    printf("%c",p[num-1]);
 
     return 0;
 }
